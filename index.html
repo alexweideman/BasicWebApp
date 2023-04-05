@@ -73,6 +73,28 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		console.log("Exponent function was run.");
 	}
 	
+	function exampleFunction4()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		for(let slay = 0; slay < smileys; slay++)
+		{
+			var smileyImage = document.createElement("img");
+			smileyImage.src = “https://i.imgur.com/jctdkSS.png”;
+			document.getElementById(“surprise content”).appendChild(smileyImage)
+		}
+		
+		for(let slay2 = 0; slay2 < frownys; slay2++)
+		{
+			var frownyImage = document.createElement("img");
+			frownyImage.src = "https://i.imgur.com/dVUqrSt.png";
+			document.getElementById("surprise content").appendChild(frownyImage)
+		}
+		document.getElementById(“surprise results”).innerHTML = “You inserted ” + exampleVariable1 + “ smiley faces and ” + exampleVariable2 + “ frowny faces!”;
+					
+	}
+	
 	function exampleResultsFunction()
 	{
 		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
@@ -160,7 +182,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
   <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
-    
+  <a href="#alternatepage" onclick="InsertImages();" class="w3-btn w3-grey">Special Button</a>
+	  
+	  
   </center>
 </div>  
   
@@ -202,8 +226,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<!--A link that runs a function when clicked and takes the user to a new page.-->
-	<a href=
-	
+	<a href=“#pageNameHere” class="     " onclick="functionNameHere();">     </a>
+</div>
+
 
 		
   
